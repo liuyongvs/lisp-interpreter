@@ -1,0 +1,19 @@
+(define foo 2)
+foo
+(cons 1 (cons 2 nil))
+(cdr (quote (1 2 3)))
+(car (quote (1 2 3)))
+(+ (- 5 6) (+ 4 0))
+((lambda (x) (* x x)) 6)
+(define sub (lambda (x y) (- x y)))
+(define square (lambda (x) (* x x)))
+(sub 12 8)
+(and nil t)
+(if (< 4 7) (+ 1 2) 7)
+(if t (square 7) (+ 6 5))
+(> 2 0)
+(define fact (lambda (x) (if (= x 0) 1 (* x (fact (- x 1))))))
+(fact 5)
+(sub 7 8) 
+//sub 一个函数只能使用一次
+//lambda 需要这句话，不然报错. return env_find(parent, symbol, result);
