@@ -22,8 +22,12 @@ implement a lisp interpreter with low level language in C.
 
 more works deserve to be done, and i will do it later
 1. support other type, such as float, big number, complex and so on
+
 2. support variadic functions, such as(+ 1 2 3 4)
+
 3. tail recursive optimization
+
 4. environment use the hash table to speed up
+
 5. alternative GC
 
